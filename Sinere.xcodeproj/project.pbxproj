@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040560552CEDB69B00B04E03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405604B2CEDB69B00B04E03 /* AppDelegate.swift */; };
+		040560562CEDB69B00B04E03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040560522CEDB69B00B04E03 /* SceneDelegate.swift */; };
+		040560582CEDB69B00B04E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0405604C2CEDB69B00B04E03 /* Assets.xcassets */; };
+		0405605A2CEDB69B00B04E03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0405604F2CEDB69B00B04E03 /* LaunchScreen.storyboard */; };
+		0405605B2CEDB69B00B04E03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040560512CEDB69B00B04E03 /* Main.storyboard */; };
+		040560602CEDDA6F00B04E03 /* CreativeBaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405605F2CEDDA6F00B04E03 /* CreativeBaseHandler.swift */; };
+		040560622CEDDAA100B04E03 /* InspireStationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040560612CEDDAA100B04E03 /* InspireStationHandler.swift */; };
+		040560642CEDDD1000B04E03 /* CreatorLoginHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040560632CEDDD1000B04E03 /* CreatorLoginHandler.swift */; };
+		040560662CEDE63B00B04E03 /* MusePoolHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040560652CEDE63B00B04E03 /* MusePoolHandler.swift */; };
+		040560682CEDEA0500B04E03 /* SinerePortalHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040560672CEDEA0500B04E03 /* SinerePortalHandler.swift */; };
+		0405606A2CEDEA2100B04E03 /* MySpaceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040560692CEDEA2100B04E03 /* MySpaceHandler.swift */; };
+		04159F992CF6E7820067CE32 /* EngagementSinereHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04159F982CF6E7820067CE32 /* EngagementSinereHandler.swift */; };
+		04159F9C2CF6FB710067CE32 /* InstantRelayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04159F9B2CF6FB710067CE32 /* InstantRelayObject.swift */; };
+		04429BDD2CF0186E000E13E0 /* ImaginariumHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04429BDC2CF0186E000E13E0 /* ImaginariumHandler.swift */; };
+		04429BE02CF018B6000E13E0 /* ImaginariumHandlerCollectionReusablePalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04429BDE2CF018B6000E13E0 /* ImaginariumHandlerCollectionReusablePalette.swift */; };
+		04429BE12CF018B6000E13E0 /* ImaginariumHandlerCollectionReusablePalette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04429BDF2CF018B6000E13E0 /* ImaginariumHandlerCollectionReusablePalette.xib */; };
+		04429BE32CF02173000E13E0 /* SinereStyleAiLayoutFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04429BE22CF02173000E13E0 /* SinereStyleAiLayoutFlow.swift */; };
+		045365042CF40FD900D332F0 /* SinereViolationReportPanelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045365032CF40FD900D332F0 /* SinereViolationReportPanelHandler.swift */; };
+		045365062CF4207100D332F0 /* DiamondHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045365052CF4207100D332F0 /* DiamondHandler.swift */; };
+		045365092CF425E700D332F0 /* MySpaceReusablePalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045365082CF425E700D332F0 /* MySpaceReusablePalette.swift */; };
+		0474B1682CF445F100425FC6 /* SinereSettingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474B1672CF445F100425FC6 /* SinereSettingHandler.swift */; };
+		0474B16A2CF4471D00425FC6 /* SinereSettingCellPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474B1692CF4471D00425FC6 /* SinereSettingCellPalette.swift */; };
+		0474B16C2CF44B9D00425FC6 /* SinereArtFeedbackHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474B16B2CF44B9D00425FC6 /* SinereArtFeedbackHandler.swift */; };
+		0474B16E2CF4500500425FC6 /* AboutSinereHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474B16D2CF4500500425FC6 /* AboutSinereHandler.swift */; };
+		0474B1702CF4574500425FC6 /* DiamondCollectionCellPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474B16F2CF4574500425FC6 /* DiamondCollectionCellPalette.swift */; };
+		0482ED172CF050B5003E5DE9 /* ImaginariumOptimizationReusablePalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482ED152CF050B5003E5DE9 /* ImaginariumOptimizationReusablePalette.swift */; };
+		0482ED182CF050B5003E5DE9 /* ImaginariumOptimizationReusablePalette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0482ED162CF050B5003E5DE9 /* ImaginariumOptimizationReusablePalette.xib */; };
+		0482ED1A2CF06C97003E5DE9 /* ImaginariumOptimizationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482ED192CF06C97003E5DE9 /* ImaginariumOptimizationHandler.swift */; };
+		0482ED1C2CF06CA4003E5DE9 /* ImaginariumResultHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482ED1B2CF06CA4003E5DE9 /* ImaginariumResultHandler.swift */; };
+		0482ED1F2CF07048003E5DE9 /* InstantRelayListHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482ED1E2CF07048003E5DE9 /* InstantRelayListHandler.swift */; };
+		0482ED222CF072BE003E5DE9 /* InstantRelayListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482ED212CF072BE003E5DE9 /* InstantRelayListCell.swift */; };
+		0482ED242CF07891003E5DE9 /* InstantRelayListContentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482ED232CF07891003E5DE9 /* InstantRelayListContentHandler.swift */; };
+		0482ED262CF07B95003E5DE9 /* InstantRelayListContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482ED252CF07B95003E5DE9 /* InstantRelayListContentCell.swift */; };
+		0482ED282CF088A1003E5DE9 /* InstantRelayContactHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482ED272CF088A1003E5DE9 /* InstantRelayContactHandler.swift */; };
+		04A0771E2CF59A4200CEF4B5 /* SneUserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0771D2CF59A4200CEF4B5 /* SneUserObject.swift */; };
+		04A1B6E52D1959EF007F58E2 /* PortalUserCellPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1B6E32D1959EF007F58E2 /* PortalUserCellPalette.swift */; };
+		04A1B6E62D1959EF007F58E2 /* PortalUserCellPalette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A1B6E42D1959EF007F58E2 /* PortalUserCellPalette.xib */; };
+		04AA88E32CF71B070088A305 /* AcquisitionOrchestrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA88E22CF71B070088A305 /* AcquisitionOrchestrator.swift */; };
+		04F9D9B12CEED00E00D21393 /* SneTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9D9B02CEED00E00D21393 /* SneTools.swift */; };
+		04F9D9B32CEED28E00D21393 /* PortalCellPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9D9B22CEED28E00D21393 /* PortalCellPalette.swift */; };
+		04F9D9B62CEED2C500D21393 /* PortalReusablePalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9D9B42CEED2C500D21393 /* PortalReusablePalette.swift */; };
+		04F9D9B72CEED2C500D21393 /* PortalReusablePalette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F9D9B52CEED2C500D21393 /* PortalReusablePalette.xib */; };
+		04F9D9BA2CEED8C200D21393 /* PortalReusableCellPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9D9B82CEED8C200D21393 /* PortalReusableCellPalette.swift */; };
+		04F9D9BB2CEED8C200D21393 /* PortalReusableCellPalette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F9D9B92CEED8C200D21393 /* PortalReusableCellPalette.xib */; };
+		04F9D9BD2CEF1B5600D21393 /* SinerePortalHandlerDetailHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9D9BC2CEF1B5600D21393 /* SinerePortalHandlerDetailHandler.swift */; };
+		04F9D9BF2CEF1BCE00D21393 /* SinerePortalDetailHeaderPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9D9BE2CEF1BCE00D21393 /* SinerePortalDetailHeaderPalette.swift */; };
+		04F9D9C12CEF1BD900D21393 /* SinerePortalDetailHeaderPalette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F9D9C02CEF1BD900D21393 /* SinerePortalDetailHeaderPalette.xib */; };
+		04F9D9C42CEF346200D21393 /* SketNotesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9D9C32CEF346200D21393 /* SketNotesHandler.swift */; };
+		CD3560958E3AB79827602038 /* Pods_Sinere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AF92A5BDF1FB86512BC356 /* Pods_Sinere.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		040560232CEDB24500B04E03 /* Sinere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sinere.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0405604B2CEDB69B00B04E03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0405604C2CEDB69B00B04E03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0405604D2CEDB69B00B04E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0405604E2CEDB69B00B04E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		040560502CEDB69B00B04E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		040560522CEDB69B00B04E03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0405605F2CEDDA6F00B04E03 /* CreativeBaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativeBaseHandler.swift; sourceTree = "<group>"; };
+		040560612CEDDAA100B04E03 /* InspireStationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspireStationHandler.swift; sourceTree = "<group>"; };
+		040560632CEDDD1000B04E03 /* CreatorLoginHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorLoginHandler.swift; sourceTree = "<group>"; };
+		040560652CEDE63B00B04E03 /* MusePoolHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusePoolHandler.swift; sourceTree = "<group>"; };
+		040560672CEDEA0500B04E03 /* SinerePortalHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinerePortalHandler.swift; sourceTree = "<group>"; };
+		040560692CEDEA2100B04E03 /* MySpaceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpaceHandler.swift; sourceTree = "<group>"; };
+		04159F982CF6E7820067CE32 /* EngagementSinereHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngagementSinereHandler.swift; sourceTree = "<group>"; };
+		04159F9B2CF6FB710067CE32 /* InstantRelayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantRelayObject.swift; sourceTree = "<group>"; };
+		04429BDC2CF0186E000E13E0 /* ImaginariumHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaginariumHandler.swift; sourceTree = "<group>"; };
+		04429BDE2CF018B6000E13E0 /* ImaginariumHandlerCollectionReusablePalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaginariumHandlerCollectionReusablePalette.swift; sourceTree = "<group>"; };
+		04429BDF2CF018B6000E13E0 /* ImaginariumHandlerCollectionReusablePalette.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImaginariumHandlerCollectionReusablePalette.xib; sourceTree = "<group>"; };
+		04429BE22CF02173000E13E0 /* SinereStyleAiLayoutFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinereStyleAiLayoutFlow.swift; sourceTree = "<group>"; };
+		045365032CF40FD900D332F0 /* SinereViolationReportPanelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinereViolationReportPanelHandler.swift; sourceTree = "<group>"; };
+		045365052CF4207100D332F0 /* DiamondHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondHandler.swift; sourceTree = "<group>"; };
+		045365082CF425E700D332F0 /* MySpaceReusablePalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpaceReusablePalette.swift; sourceTree = "<group>"; };
+		0474B1672CF445F100425FC6 /* SinereSettingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinereSettingHandler.swift; sourceTree = "<group>"; };
+		0474B1692CF4471D00425FC6 /* SinereSettingCellPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinereSettingCellPalette.swift; sourceTree = "<group>"; };
+		0474B16B2CF44B9D00425FC6 /* SinereArtFeedbackHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinereArtFeedbackHandler.swift; sourceTree = "<group>"; };
+		0474B16D2CF4500500425FC6 /* AboutSinereHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSinereHandler.swift; sourceTree = "<group>"; };
+		0474B16F2CF4574500425FC6 /* DiamondCollectionCellPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondCollectionCellPalette.swift; sourceTree = "<group>"; };
+		0482ED152CF050B5003E5DE9 /* ImaginariumOptimizationReusablePalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaginariumOptimizationReusablePalette.swift; sourceTree = "<group>"; };
+		0482ED162CF050B5003E5DE9 /* ImaginariumOptimizationReusablePalette.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImaginariumOptimizationReusablePalette.xib; sourceTree = "<group>"; };
+		0482ED192CF06C97003E5DE9 /* ImaginariumOptimizationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaginariumOptimizationHandler.swift; sourceTree = "<group>"; };
+		0482ED1B2CF06CA4003E5DE9 /* ImaginariumResultHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaginariumResultHandler.swift; sourceTree = "<group>"; };
+		0482ED1E2CF07048003E5DE9 /* InstantRelayListHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantRelayListHandler.swift; sourceTree = "<group>"; };
+		0482ED212CF072BE003E5DE9 /* InstantRelayListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantRelayListCell.swift; sourceTree = "<group>"; };
+		0482ED232CF07891003E5DE9 /* InstantRelayListContentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantRelayListContentHandler.swift; sourceTree = "<group>"; };
+		0482ED252CF07B95003E5DE9 /* InstantRelayListContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantRelayListContentCell.swift; sourceTree = "<group>"; };
+		0482ED272CF088A1003E5DE9 /* InstantRelayContactHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantRelayContactHandler.swift; sourceTree = "<group>"; };
+		0497A99F2CF56B0200144FB5 /* GPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A0771D2CF59A4200CEF4B5 /* SneUserObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneUserObject.swift; sourceTree = "<group>"; };
+		04A1B6E32D1959EF007F58E2 /* PortalUserCellPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalUserCellPalette.swift; sourceTree = "<group>"; };
+		04A1B6E42D1959EF007F58E2 /* PortalUserCellPalette.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PortalUserCellPalette.xib; sourceTree = "<group>"; };
+		04AA88E22CF71B070088A305 /* AcquisitionOrchestrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcquisitionOrchestrator.swift; sourceTree = "<group>"; };
+		04CD8A772D0ADD40003A7ED0 /* Sinere.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sinere.entitlements; sourceTree = "<group>"; };
+		04F9D9B02CEED00E00D21393 /* SneTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneTools.swift; sourceTree = "<group>"; };
+		04F9D9B22CEED28E00D21393 /* PortalCellPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalCellPalette.swift; sourceTree = "<group>"; };
+		04F9D9B42CEED2C500D21393 /* PortalReusablePalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalReusablePalette.swift; sourceTree = "<group>"; };
+		04F9D9B52CEED2C500D21393 /* PortalReusablePalette.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PortalReusablePalette.xib; sourceTree = "<group>"; };
+		04F9D9B82CEED8C200D21393 /* PortalReusableCellPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalReusableCellPalette.swift; sourceTree = "<group>"; };
+		04F9D9B92CEED8C200D21393 /* PortalReusableCellPalette.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PortalReusableCellPalette.xib; sourceTree = "<group>"; };
+		04F9D9BC2CEF1B5600D21393 /* SinerePortalHandlerDetailHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinerePortalHandlerDetailHandler.swift; sourceTree = "<group>"; };
+		04F9D9BE2CEF1BCE00D21393 /* SinerePortalDetailHeaderPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinerePortalDetailHeaderPalette.swift; sourceTree = "<group>"; };
+		04F9D9C02CEF1BD900D21393 /* SinerePortalDetailHeaderPalette.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SinerePortalDetailHeaderPalette.xib; sourceTree = "<group>"; };
+		04F9D9C32CEF346200D21393 /* SketNotesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketNotesHandler.swift; sourceTree = "<group>"; };
+		15AF92A5BDF1FB86512BC356 /* Pods_Sinere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sinere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97E507E87DFA787367C9A19A /* Pods-Sinere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sinere.release.xcconfig"; path = "Target Support Files/Pods-Sinere/Pods-Sinere.release.xcconfig"; sourceTree = "<group>"; };
+		C9A536748132AEA1D3200EF9 /* Pods-Sinere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sinere.debug.xcconfig"; path = "Target Support Files/Pods-Sinere/Pods-Sinere.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		040560202CEDB24500B04E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3560958E3AB79827602038 /* Pods_Sinere.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0405601A2CEDB24500B04E03 = {
+			isa = PBXGroup;
+			children = (
+				040560542CEDB69B00B04E03 /* Sinere */,
+				040560242CEDB24500B04E03 /* Products */,
+				D87E282BA0698A1377409F77 /* Pods */,
+				93F603EDA63CD1D2F7B7F479 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		040560242CEDB24500B04E03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				040560232CEDB24500B04E03 /* Sinere.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		040560542CEDB69B00B04E03 /* Sinere */ = {
+			isa = PBXGroup;
+			children = (
+				04CD8A772D0ADD40003A7ED0 /* Sinere.entitlements */,
+				0482ED1D2CF06FFB003E5DE9 /* InstantRelay */,
+				04F9D9C22CEF344300D21393 /* SketchNotes */,
+				0405605D2CEDD9DC00B04E03 /* Portal */,
+				0405605E2CEDD9E500B04E03 /* MySpace */,
+				0405605C2CEDD94600B04E03 /* InspireStation */,
+				0405604B2CEDB69B00B04E03 /* AppDelegate.swift */,
+				0405604C2CEDB69B00B04E03 /* Assets.xcassets */,
+				0405604F2CEDB69B00B04E03 /* LaunchScreen.storyboard */,
+				040560512CEDB69B00B04E03 /* Main.storyboard */,
+				0405604D2CEDB69B00B04E03 /* Info.plist */,
+				040560522CEDB69B00B04E03 /* SceneDelegate.swift */,
+			);
+			path = Sinere;
+			sourceTree = "<group>";
+		};
+		0405605C2CEDD94600B04E03 /* InspireStation */ = {
+			isa = PBXGroup;
+			children = (
+				04A0771C2CF59A2A00CEF4B5 /* Object */,
+				0405605F2CEDDA6F00B04E03 /* CreativeBaseHandler.swift */,
+				040560612CEDDAA100B04E03 /* InspireStationHandler.swift */,
+				040560632CEDDD1000B04E03 /* CreatorLoginHandler.swift */,
+				040560652CEDE63B00B04E03 /* MusePoolHandler.swift */,
+				04159F982CF6E7820067CE32 /* EngagementSinereHandler.swift */,
+				04F9D9B02CEED00E00D21393 /* SneTools.swift */,
+				04AA88E22CF71B070088A305 /* AcquisitionOrchestrator.swift */,
+			);
+			path = InspireStation;
+			sourceTree = "<group>";
+		};
+		0405605D2CEDD9DC00B04E03 /* Portal */ = {
+			isa = PBXGroup;
+			children = (
+				0405606B2CEDEF4A00B04E03 /* Palette */,
+				040560672CEDEA0500B04E03 /* SinerePortalHandler.swift */,
+				04F9D9BC2CEF1B5600D21393 /* SinerePortalHandlerDetailHandler.swift */,
+				04429BDC2CF0186E000E13E0 /* ImaginariumHandler.swift */,
+				0482ED192CF06C97003E5DE9 /* ImaginariumOptimizationHandler.swift */,
+				0482ED1B2CF06CA4003E5DE9 /* ImaginariumResultHandler.swift */,
+			);
+			path = Portal;
+			sourceTree = "<group>";
+		};
+		0405605E2CEDD9E500B04E03 /* MySpace */ = {
+			isa = PBXGroup;
+			children = (
+				045365072CF425C500D332F0 /* Palette */,
+				040560692CEDEA2100B04E03 /* MySpaceHandler.swift */,
+				045365032CF40FD900D332F0 /* SinereViolationReportPanelHandler.swift */,
+				045365052CF4207100D332F0 /* DiamondHandler.swift */,
+				0474B1672CF445F100425FC6 /* SinereSettingHandler.swift */,
+				0474B16B2CF44B9D00425FC6 /* SinereArtFeedbackHandler.swift */,
+				0474B16D2CF4500500425FC6 /* AboutSinereHandler.swift */,
+			);
+			path = MySpace;
+			sourceTree = "<group>";
+		};
+		0405606B2CEDEF4A00B04E03 /* Palette */ = {
+			isa = PBXGroup;
+			children = (
+				04F9D9B22CEED28E00D21393 /* PortalCellPalette.swift */,
+				04F9D9B42CEED2C500D21393 /* PortalReusablePalette.swift */,
+				04F9D9B52CEED2C500D21393 /* PortalReusablePalette.xib */,
+				04F9D9B82CEED8C200D21393 /* PortalReusableCellPalette.swift */,
+				04F9D9B92CEED8C200D21393 /* PortalReusableCellPalette.xib */,
+				04A1B6E32D1959EF007F58E2 /* PortalUserCellPalette.swift */,
+				04A1B6E42D1959EF007F58E2 /* PortalUserCellPalette.xib */,
+				04F9D9BE2CEF1BCE00D21393 /* SinerePortalDetailHeaderPalette.swift */,
+				04F9D9C02CEF1BD900D21393 /* SinerePortalDetailHeaderPalette.xib */,
+				04429BDE2CF018B6000E13E0 /* ImaginariumHandlerCollectionReusablePalette.swift */,
+				04429BDF2CF018B6000E13E0 /* ImaginariumHandlerCollectionReusablePalette.xib */,
+				0482ED152CF050B5003E5DE9 /* ImaginariumOptimizationReusablePalette.swift */,
+				0482ED162CF050B5003E5DE9 /* ImaginariumOptimizationReusablePalette.xib */,
+				04429BE22CF02173000E13E0 /* SinereStyleAiLayoutFlow.swift */,
+			);
+			path = Palette;
+			sourceTree = "<group>";
+		};
+		04159F9A2CF6FB520067CE32 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				04159F9B2CF6FB710067CE32 /* InstantRelayObject.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		045365072CF425C500D332F0 /* Palette */ = {
+			isa = PBXGroup;
+			children = (
+				045365082CF425E700D332F0 /* MySpaceReusablePalette.swift */,
+				0474B1692CF4471D00425FC6 /* SinereSettingCellPalette.swift */,
+				0474B16F2CF4574500425FC6 /* DiamondCollectionCellPalette.swift */,
+			);
+			path = Palette;
+			sourceTree = "<group>";
+		};
+		0482ED1D2CF06FFB003E5DE9 /* InstantRelay */ = {
+			isa = PBXGroup;
+			children = (
+				04159F9A2CF6FB520067CE32 /* Object */,
+				0482ED202CF072A3003E5DE9 /* Palette */,
+				0482ED1E2CF07048003E5DE9 /* InstantRelayListHandler.swift */,
+				0482ED232CF07891003E5DE9 /* InstantRelayListContentHandler.swift */,
+				0482ED272CF088A1003E5DE9 /* InstantRelayContactHandler.swift */,
+			);
+			path = InstantRelay;
+			sourceTree = "<group>";
+		};
+		0482ED202CF072A3003E5DE9 /* Palette */ = {
+			isa = PBXGroup;
+			children = (
+				0482ED212CF072BE003E5DE9 /* InstantRelayListCell.swift */,
+				0482ED252CF07B95003E5DE9 /* InstantRelayListContentCell.swift */,
+			);
+			path = Palette;
+			sourceTree = "<group>";
+		};
+		04A0771C2CF59A2A00CEF4B5 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				04A0771D2CF59A4200CEF4B5 /* SneUserObject.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		04F9D9C22CEF344300D21393 /* SketchNotes */ = {
+			isa = PBXGroup;
+			children = (
+				04F9D9C32CEF346200D21393 /* SketNotesHandler.swift */,
+			);
+			path = SketchNotes;
+			sourceTree = "<group>";
+		};
+		93F603EDA63CD1D2F7B7F479 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0497A99F2CF56B0200144FB5 /* GPUImage.framework */,
+				15AF92A5BDF1FB86512BC356 /* Pods_Sinere.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D87E282BA0698A1377409F77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9A536748132AEA1D3200EF9 /* Pods-Sinere.debug.xcconfig */,
+				97E507E87DFA787367C9A19A /* Pods-Sinere.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		040560222CEDB24500B04E03 /* Sinere */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040560362CEDB24700B04E03 /* Build configuration list for PBXNativeTarget "Sinere" */;
+			buildPhases = (
+				6C3EF6580A4FAC82B30BFE31 /* [CP] Check Pods Manifest.lock */,
+				0405601F2CEDB24500B04E03 /* Sources */,
+				040560202CEDB24500B04E03 /* Frameworks */,
+				040560212CEDB24500B04E03 /* Resources */,
+				EE4F6775F1F5D6B70CCEEFF5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sinere;
+			productName = Sinere;
+			productReference = 040560232CEDB24500B04E03 /* Sinere.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0405601B2CEDB24500B04E03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					040560222CEDB24500B04E03 = {
+						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
+					};
+				};
+			};
+			buildConfigurationList = 0405601E2CEDB24500B04E03 /* Build configuration list for PBXProject "Sinere" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0405601A2CEDB24500B04E03;
+			productRefGroup = 040560242CEDB24500B04E03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				040560222CEDB24500B04E03 /* Sinere */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		040560212CEDB24500B04E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040560582CEDB69B00B04E03 /* Assets.xcassets in Resources */,
+				04F9D9C12CEF1BD900D21393 /* SinerePortalDetailHeaderPalette.xib in Resources */,
+				0405605A2CEDB69B00B04E03 /* LaunchScreen.storyboard in Resources */,
+				04F9D9B72CEED2C500D21393 /* PortalReusablePalette.xib in Resources */,
+				04A1B6E62D1959EF007F58E2 /* PortalUserCellPalette.xib in Resources */,
+				04429BE12CF018B6000E13E0 /* ImaginariumHandlerCollectionReusablePalette.xib in Resources */,
+				0405605B2CEDB69B00B04E03 /* Main.storyboard in Resources */,
+				04F9D9BB2CEED8C200D21393 /* PortalReusableCellPalette.xib in Resources */,
+				0482ED182CF050B5003E5DE9 /* ImaginariumOptimizationReusablePalette.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C3EF6580A4FAC82B30BFE31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sinere-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE4F6775F1F5D6B70CCEEFF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sinere/Pods-Sinere-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sinere/Pods-Sinere-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sinere/Pods-Sinere-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0405601F2CEDB24500B04E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0474B1702CF4574500425FC6 /* DiamondCollectionCellPalette.swift in Sources */,
+				040560602CEDDA6F00B04E03 /* CreativeBaseHandler.swift in Sources */,
+				045365062CF4207100D332F0 /* DiamondHandler.swift in Sources */,
+				040560682CEDEA0500B04E03 /* SinerePortalHandler.swift in Sources */,
+				04A1B6E52D1959EF007F58E2 /* PortalUserCellPalette.swift in Sources */,
+				0482ED242CF07891003E5DE9 /* InstantRelayListContentHandler.swift in Sources */,
+				040560552CEDB69B00B04E03 /* AppDelegate.swift in Sources */,
+				04F9D9B32CEED28E00D21393 /* PortalCellPalette.swift in Sources */,
+				04159F992CF6E7820067CE32 /* EngagementSinereHandler.swift in Sources */,
+				04429BDD2CF0186E000E13E0 /* ImaginariumHandler.swift in Sources */,
+				045365092CF425E700D332F0 /* MySpaceReusablePalette.swift in Sources */,
+				04429BE02CF018B6000E13E0 /* ImaginariumHandlerCollectionReusablePalette.swift in Sources */,
+				0482ED222CF072BE003E5DE9 /* InstantRelayListCell.swift in Sources */,
+				04F9D9B12CEED00E00D21393 /* SneTools.swift in Sources */,
+				0474B16A2CF4471D00425FC6 /* SinereSettingCellPalette.swift in Sources */,
+				04429BE32CF02173000E13E0 /* SinereStyleAiLayoutFlow.swift in Sources */,
+				040560662CEDE63B00B04E03 /* MusePoolHandler.swift in Sources */,
+				04A0771E2CF59A4200CEF4B5 /* SneUserObject.swift in Sources */,
+				04F9D9BA2CEED8C200D21393 /* PortalReusableCellPalette.swift in Sources */,
+				045365042CF40FD900D332F0 /* SinereViolationReportPanelHandler.swift in Sources */,
+				0482ED172CF050B5003E5DE9 /* ImaginariumOptimizationReusablePalette.swift in Sources */,
+				04F9D9C42CEF346200D21393 /* SketNotesHandler.swift in Sources */,
+				0482ED282CF088A1003E5DE9 /* InstantRelayContactHandler.swift in Sources */,
+				040560562CEDB69B00B04E03 /* SceneDelegate.swift in Sources */,
+				040560622CEDDAA100B04E03 /* InspireStationHandler.swift in Sources */,
+				04159F9C2CF6FB710067CE32 /* InstantRelayObject.swift in Sources */,
+				04AA88E32CF71B070088A305 /* AcquisitionOrchestrator.swift in Sources */,
+				040560642CEDDD1000B04E03 /* CreatorLoginHandler.swift in Sources */,
+				0474B16C2CF44B9D00425FC6 /* SinereArtFeedbackHandler.swift in Sources */,
+				0482ED1C2CF06CA4003E5DE9 /* ImaginariumResultHandler.swift in Sources */,
+				0482ED1F2CF07048003E5DE9 /* InstantRelayListHandler.swift in Sources */,
+				0482ED1A2CF06C97003E5DE9 /* ImaginariumOptimizationHandler.swift in Sources */,
+				0405606A2CEDEA2100B04E03 /* MySpaceHandler.swift in Sources */,
+				04F9D9BD2CEF1B5600D21393 /* SinerePortalHandlerDetailHandler.swift in Sources */,
+				0482ED262CF07B95003E5DE9 /* InstantRelayListContentCell.swift in Sources */,
+				0474B16E2CF4500500425FC6 /* AboutSinereHandler.swift in Sources */,
+				0474B1682CF445F100425FC6 /* SinereSettingHandler.swift in Sources */,
+				04F9D9B62CEED2C500D21393 /* PortalReusablePalette.swift in Sources */,
+				04F9D9BF2CEF1BCE00D21393 /* SinerePortalDetailHeaderPalette.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0405604F2CEDB69B00B04E03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0405604E2CEDB69B00B04E03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		040560512CEDB69B00B04E03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				040560502CEDB69B00B04E03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		040560372CEDB24700B04E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A536748132AEA1D3200EF9 /* Pods-Sinere.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Sinere/Sinere.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 989CM2LH2W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sinere/GPUImage",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sinere/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Sokki;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to camera to make calls";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow access to the microphone to make calls";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow to use the album to select pictures to publish dynamic";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zww.app.cn.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = pp;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		040560382CEDB24700B04E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97E507E87DFA787367C9A19A /* Pods-Sinere.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Sinere/Sinere.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 989CM2LH2W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sinere/GPUImage",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sinere/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Sokki;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to camera to make calls";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow access to the microphone to make calls";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow to use the album to select pictures to publish dynamic";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zww.app.cn.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = pp;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		040560392CEDB24700B04E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0405603A2CEDB24700B04E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0405601E2CEDB24500B04E03 /* Build configuration list for PBXProject "Sinere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040560392CEDB24700B04E03 /* Debug */,
+				0405603A2CEDB24700B04E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		040560362CEDB24700B04E03 /* Build configuration list for PBXNativeTarget "Sinere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040560372CEDB24700B04E03 /* Debug */,
+				040560382CEDB24700B04E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0405601B2CEDB24500B04E03 /* Project object */;
+}
