@@ -11,6 +11,7 @@ import RxCocoa
 
 class PortalReusablePalette: UICollectionReusableView {
     
+    @IBOutlet weak var purPersiner: UIView!
     var sneMenuChanged:((Int)->())?
     var sneAIIndex:((Int)->())?
     
@@ -33,6 +34,8 @@ class PortalReusablePalette: UICollectionReusableView {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        purPersiner.layer.cornerRadius = 3
+        purPersiner.layer.masksToBounds = true
         
         let sinerePortalCollectionViewFlowLayout = UICollectionViewFlowLayout()
         sinerePortalCollectionViewFlowLayout.scrollDirection = .horizontal
@@ -49,11 +52,13 @@ class PortalReusablePalette: UICollectionReusableView {
         portalUserLayout.scrollDirection = .horizontal
         portalUserLayout.minimumLineSpacing = 12
         portalUserLayout.minimumInteritemSpacing = 12
-        portalUserLayout.itemSize = CGSizeMake(80,102)
+        portalUserLayout.itemSize = CGSizeMake(130,208)
         portalUserLayout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         
         protalUserCollectionPalette.setCollectionViewLayout(portalUserLayout, animated: true)
-        protalUserCollectionPalette.register(UINib(nibName: "PortalUserCellPalette", bundle: nil), forCellWithReuseIdentifier: "PortalUserCellPalette")
+//        protalUserCollectionPalette.register(UINib(nibName: "PortalUserCellPalette", bundle: nil), forCellWithReuseIdentifier: "PortalUserCellPalette")
+        
+        protalUserCollectionPalette.register(UINib(nibName: "SineromeCell", bundle: nil), forCellWithReuseIdentifier: "SineromeCell")
         
         
         protalReusableItems.bind(to: protalAICollectionPalette.rx.items(cellIdentifier: "PortalReusableCellPalette", cellType: PortalReusableCellPalette.self)){ row, model, cell in
@@ -68,9 +73,12 @@ class PortalReusablePalette: UICollectionReusableView {
         }).disposed(by: sneDisposeBag)
         
         
-        protalUserRelay.bind(to: protalUserCollectionPalette.rx.items(cellIdentifier: "PortalUserCellPalette", cellType: PortalUserCellPalette.self)){ row, model, cell in
-            cell.userPalette.image = UIImage(named: model.profileThumbnail)
+        protalUserRelay.bind(to: protalUserCollectionPalette.rx.items(cellIdentifier: "SineromeCell", cellType: SineromeCell.self)){ row, model, cell in
+            cell.rasomdnAvatoert.image = UIImage(named: model.profileThumbnail)
             cell.namePalette.text = model.sinereName
+            
+            cell.ltsVobert.image = UIImage(named: model.PicjRoomAcpic)
+            cell.namePalette.text = model.PicjRoomTitle
         }.disposed(by: sneDisposeBag)
         
         protalUserCollectionPalette.rx.itemSelected.subscribe(onNext: { [weak self] indexPath in

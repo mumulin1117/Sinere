@@ -22,6 +22,9 @@ struct SneUserObject: Convertible {
     var sinereFollowing = 0
     
     var sneTempSelectedImage:UIImage?
+    
+    var PicjRoomAcpic:String = ""
+    var PicjRoomTitle:String = ""
 
     init(){
         sinereFollower = Int.random(in: 1...5)

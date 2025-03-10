@@ -1,68 +1,67 @@
 //
-//  SketNotesHandler.swift
+//  SinwerPRoomaerhandontroller.swift
 //  Sinere
 //
-//  Created by Sinere on 2024/11/21.
+//  Created by Sinere on 2025/3/7.
 //
 
 import UIKit
+import Photos
 import PhotosUI
-import RxSwift
-import RxCocoa
 
-class SketNotesHandler: CreativeBaseHandler,PHPickerViewControllerDelegate {
+class SinwerPRoomaerhandontroller: UIViewController,PHPickerViewControllerDelegate {
+    var isSneAiStylePaint:Bool = false
     
-    @IBOutlet weak var sinereTopTips: UILabel!
-    @IBOutlet weak var sinereSelectImagePaleete: UIImageView!
-    @IBOutlet weak var sketNotesReleaseButton: UIButton!
-    @IBOutlet weak var sketNotesTextPalette: UITextView!
-    @IBOutlet weak var sketPlaceHolderTip: UILabel!
+    @IBOutlet weak var sinertyUpload: UIButton!
+    
+    
+    @IBOutlet weak var entryuinFiop: UITextField!
     
     
     @IBAction func raiResliHDjser(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
     
-    
-    
-    let sneSelectedImagePalette = BehaviorRelay<UIImage?>(value: nil)
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        sinertyUpload.layer.cornerRadius = 20
+        sinertyUpload.layer.masksToBounds = true
+    
+        entryuinFiop.attributedPlaceholder = NSAttributedString.init(string: "Please enter", attributes: [NSAttributedString.Key.foregroundColor : UIColor(red: 0.59, green: 0.6, blue: 0.61, alpha: 1)])
         
-        // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor(red: 4/255.0, green: 6/255.0, blue: 32/255.0, alpha: 1)
-        sinereTopTips.text = "Cnompgycwjrjiwtbeer".sinereString
-        sketNotesReleaseButton.setTitle("Rzejlneeafsme".sinereString, for: .normal)
         
-        sketPlaceHolderTip.text = "Pclfeiaxsmez nexndtjeyr".sinereString
         
-        sketNotesTextPalette.rx.text.orEmpty.subscribe { [weak self] sketNotesTextPaletteText in
-            guard let self = self else {return}
-            self.sketPlaceHolderTip.isHidden = sketNotesTextPaletteText.count > 0
-        }.disposed(by: sneDisposeBag)
-        let sinereSelectImagePaleeteTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(sinereSelectImagePaleeteTapGestureRecognizerSelector))
-        sinereSelectImagePaleete.isUserInteractionEnabled = true
-        sinereSelectImagePaleete.addGestureRecognizer(sinereSelectImagePaleeteTapGestureRecognizer)
         
-        Observable.combineLatest(sneSelectedImagePalette, sketNotesTextPalette.rx.text.orEmpty).map { selectedImage, sneEditText in
-            return selectedImage != nil && !sneEditText.isEmpty
-        }.bind(to: sketNotesReleaseButton.rx.isEnabled).disposed(by: sneDisposeBag)
-        
-        sketNotesReleaseButton.rx.tap.subscribe {[weak self] _ in
-            guard let self = self else {return}
-            self.view.makeToastActivity(.center)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                self.view.hideToastActivity()
-                self.view.makeToast("Izfq vtjhsed urbeflyeeaaswem qiosq iseukcncoegsssifmutlf,s itwhfed jpclgaftmfnoyrbmr hweielklq tczobmppylrertyez ctzhjes krveevbiyeswq mwoimtihmidnm l2u4l ihlowufrws".sinereString, position: .center) { didTap in
-                    self.navigationController?.popViewController(animated: true)
-                }
-            }
-        }.disposed(by: sneDisposeBag)
     }
     
-    @objc func sinereSelectImagePaleeteTapGestureRecognizerSelector(){
-        self.sketNotesTextPalette.resignFirstResponder()
+    @IBAction func scvreaterNewSut(_ sender: UIButton) {
+        
+        if self.isSneAiStylePaint == false {
+            self.view.makeToast("Pxlaedanssec xudpslxopasdr ytshhex oclocvnejrs xikmzasgmes wffiurlsyt".sinereString,position: .center)
+            return
+        }
+        
+        
+        if self.entryuinFiop.text?.count ?? 0 == 0 {
+            self.view.makeToast("Pxleeeaasfeu zgeifviep nyyozugro ccchxaqty zrrosormv aaa dncadmxe".sinereString,position: .center)
+            return
+        }
+        
+        self.view.makeToastActivity(.center)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.view.hideToastActivity()
+//            self.view.makeToast("Tdhxem aczhkaetu irrokormf vypouup ocurfebattgeuda licsz vcnujrcrbexnptqlaym zulnndtewrc oriedvfiiexw".sinereString,position: .center)
+            let mintanerRootag = SinwerPRoomaeChatreoller.init()
+            mintanerRootag.isMyCreate = (true,self.entryuinFiop.text!)
+            self.navigationController?.pushViewController(mintanerRootag, animated: true)
+        }
+        
+    }
+    
+
+    
+    @IBAction func AkolpUploa(_ sender: UIButton) {
+        self.entryuinFiop.resignFirstResponder()
         
         checksPhotoLibrarySnePermission {[weak self] sneGranted in
             guard let self = self else {return}
@@ -149,21 +148,11 @@ class SketNotesHandler: CreativeBaseHandler,PHPickerViewControllerDelegate {
             guard let self = self else {return}
             if let selectResultImage = object as? UIImage {
                 DispatchQueue.main.async {
-                    self.sinereSelectImagePaleete.image = selectResultImage
-                    self.sneSelectedImagePalette.accept(selectResultImage)
+                    self.isSneAiStylePaint = true
+                    self.sinertyUpload.setBackgroundImage(selectResultImage, for: .normal)
+                    
                 }
             }
         }
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }

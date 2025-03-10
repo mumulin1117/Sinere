@@ -55,7 +55,7 @@ class SneTools {
         return sneSafeBottom + 49.0
     }
     
-    static let sneImpact:Double = 1741314297//2025-03-07 10:24:57
+    static let sneImpact:Double = 1741770573//2025-03-12 17:09:33
     
     static let shareInfo = SneTools()
     
@@ -68,6 +68,9 @@ class SneTools {
     public var mySneFollewer = [SneUserObject]()
     public var mySneLiked = [SneUserObject]()
     public var instantRelayObjectArray = [InstantRelayObject]()
+    
+    public var RoomRelayObjectArray = [InstantRelayObject]()
+    
     public var instantRelayListObjectArray = [InstantRelayListObject]()
     public var sneState = BehaviorRelay<Int>(value: 0)
     public var sneDeviceTPush = ""
@@ -113,6 +116,8 @@ class SneTools {
     }
     
     func sneCreateAnArtboard(){
+        
+       
         let sneArtboarArray = [
             [
                 "id":"Vmw56gFdjsXq2wL8LdpTQYjNjIz0FpVt",
@@ -126,7 +131,11 @@ class SneTools {
                     "Vmw56gFdjsXq2wL8LdpTQYjNjIz0FpVt3.jpg",
                     "Vmw56gFdjsXq2wL8LdpTQYjNjIz0FpVt4.jpg"
                 ],
-                "diamondCount":0
+                
+                "diamondCount":0,
+                
+                "PicjRoomAcpic":"Dreadhuio_01",
+                "PicjRoomTitle":"Brush Chat"
             ],
             [
                 "id":"W5eY7PcxIbkhjKUdr2uWlrGh3z9LShdF",
@@ -138,7 +147,9 @@ class SneTools {
                     "W5eY7PcxIbkhjKUdr2uWlrGh3z9LShdF1.jpg",
                     "W5eY7PcxIbkhjKUdr2uWlrGh3z9LShdF2.jpg",
                     "W5eY7PcxIbkhjKUdr2uWlrGh3z9LShdF3.jpg"
-                ]
+                ],
+                "PicjRoomAcpic":"Dreadhuio_02",
+                "PicjRoomTitle":"Art Talk"
             ],
             [
                 "id":"Nbu72Kiy5DhMaqFQ8gVwBWoH12RtLp79",
@@ -150,7 +161,9 @@ class SneTools {
                     "Nbu72Kiy5DhMaqFQ8gVwBWoH12RtLp791.jpg",
                     "Nbu72Kiy5DhMaqFQ8gVwBWoH12RtLp792.jpg",
                     "Nbu72Kiy5DhMaqFQ8gVwBWoH12RtLp793.jpg"
-                ]
+                ],
+                "PicjRoomAcpic":"Dreadhuio_03",
+                "PicjRoomTitle":"Sketchy Chat"
             ],
             [
                 "id":"A9kFwrCJ7d2NUzLP6IymZnoEwT0M1v0s",
@@ -163,7 +176,9 @@ class SneTools {
                     "A9kFwrCJ7d2NUzLP6IymZnoEwT0M1v0s2.jpg",
                     "A9kFwrCJ7d2NUzLP6IymZnoEwT0M1v0s3.jpg",
                     "A9kFwrCJ7d2NUzLP6IymZnoEwT0M1v0s4.jpg"
-                ]
+                ],
+                "PicjRoomAcpic":"Dreadhuio_04",
+                "PicjRoomTitle":"Palette Pal"
             ],
             [
                 "id":"v71kR6tnPxXqJ2GmF0DrZCy9ihWKLHaM",
@@ -175,7 +190,9 @@ class SneTools {
                     "v71kR6tnPxXqJ2GmF0DrZCy9ihWKLHaM1.jpg",
                     "v71kR6tnPxXqJ2GmF0DrZCy9ihWKLHaM2.jpg",
                     "v71kR6tnPxXqJ2GmF0DrZCy9ihWKLHaM3.jpg"
-                ]
+                ],
+                "PicjRoomAcpic":"Dreadhuio_05",
+                "PicjRoomTitle":"Draw Den"
             ],
             [
                 "id":"6P0FwYk8ZhV5NTxr3HfmOU2dpLvSi0rX",
@@ -187,7 +204,9 @@ class SneTools {
                     "6P0FwYk8ZhV5NTxr3HfmOU2dpLvSi0rX1.jpg",
                     "6P0FwYk8ZhV5NTxr3HfmOU2dpLvSi0rX2.jpg",
                     "6P0FwYk8ZhV5NTxr3HfmOU2dpLvSi0rX3.jpg"
-                ]
+                ],
+                "PicjRoomAcpic":"Dreadhuio_06",
+                "PicjRoomTitle":"Canvas Convo"
             ]
         ]
         

@@ -88,12 +88,19 @@ class InspireStationHandler: UIViewController {
         }.disposed(by: sneDisposeBag)
         
         SneSparkPadButton.rx.tap.subscribe {[weak self] _ in
-            guard let self = self else {return}
+//            guard let self = self else {return}
+//           
+//            if let sketNotesHandler = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SketNotesHandler") as? SketNotesHandler {
+//                let sneChild = self.children[self.sneItemClick.value]
+//                sneChild.navigationController?.pushViewController(sketNotesHandler, animated: true)
+//            }
+            
+            let tableirVc = SinwerPubPickController.init()
+            let naiguidev = UINavigationController.init(rootViewController: tableirVc)
+            naiguidev.navigationBar.isHidden = true
+            naiguidev.modalPresentationStyle = .overCurrentContext
            
-            if let sketNotesHandler = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SketNotesHandler") as? SketNotesHandler {
-                let sneChild = self.children[self.sneItemClick.value]
-                sneChild.navigationController?.pushViewController(sketNotesHandler, animated: true)
-            }
+            self?.present(naiguidev, animated: true)
             
         }.disposed(by: sneDisposeBag)
         

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SinwerPubPickController" customModule="Sinere" customModuleProvider="target">
+            <connections>
+                <outlet property="dymNiuy" destination="95v-hU-Mml" id="Kj4-7E-Ldu"/>
+                <outlet property="dymNiuyLabel" destination="2A1-2J-OOD" id="tAK-GO-tXO"/>
+                <outlet property="dymroomLabel" destination="ko5-cI-U44" id="UVu-LS-CKD"/>
+                <outlet property="dymroomNiuy" destination="wq5-ai-ejo" id="9fU-aS-9ol"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hoalertdynamic" translatesAutoresizingMaskIntoConstraints="NO" id="95v-hU-Mml">
+                    <rect key="frame" x="50.666666666666657" y="528" width="121" height="114"/>
+                </imageView>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HIOMErdynamic" translatesAutoresizingMaskIntoConstraints="NO" id="wq5-ai-ejo">
+                    <rect key="frame" x="221.66666666666663" y="528" width="121" height="114"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="114" id="nvd-Qn-bdi"/>
+                        <constraint firstAttribute="width" constant="121" id="rUb-JT-DFU"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release dynamic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2A1-2J-OOD">
+                    <rect key="frame" x="49" y="660" width="124" height="18"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create chatroom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ko5-cI-U44">
+                    <rect key="frame" x="220" y="660" width="124" height="18"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cR1-yG-k7U">
+                    <rect key="frame" x="292.66666666666669" y="438" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="PGq-m9-9ug"/>
+                        <constraint firstAttribute="width" constant="50" id="mre-SF-nUt"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="UionClosed"/>
+                    <connections>
+                        <action selector="sinkkiStart:" destination="-1" eventType="touchUpInside" id="aFb-86-402"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70897108843537415" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2A1-2J-OOD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="49" id="Dm3-hm-3fh"/>
+                <constraint firstItem="95v-hU-Mml" firstAttribute="centerX" secondItem="2A1-2J-OOD" secondAttribute="centerX" id="IhO-Al-AUJ"/>
+                <constraint firstItem="cR1-yG-k7U" firstAttribute="trailing" secondItem="wq5-ai-ejo" secondAttribute="trailing" id="KZK-Rz-k4n"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ko5-cI-U44" secondAttribute="trailing" constant="49" id="Kpb-4W-3c0"/>
+                <constraint firstItem="95v-hU-Mml" firstAttribute="height" secondItem="wq5-ai-ejo" secondAttribute="height" id="RPs-Zg-xfg"/>
+                <constraint firstItem="wq5-ai-ejo" firstAttribute="top" secondItem="cR1-yG-k7U" secondAttribute="bottom" constant="40" id="RVs-1y-V5i"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2A1-2J-OOD" secondAttribute="bottom" constant="140" id="RZB-qW-z9a"/>
+                <constraint firstItem="wq5-ai-ejo" firstAttribute="centerX" secondItem="ko5-cI-U44" secondAttribute="centerX" id="jB5-R5-d4L"/>
+                <constraint firstItem="ko5-cI-U44" firstAttribute="centerY" secondItem="2A1-2J-OOD" secondAttribute="centerY" id="mR6-uB-jj3"/>
+                <constraint firstItem="95v-hU-Mml" firstAttribute="width" secondItem="wq5-ai-ejo" secondAttribute="width" id="pJj-MC-w7Y"/>
+                <constraint firstItem="2A1-2J-OOD" firstAttribute="top" secondItem="95v-hU-Mml" secondAttribute="bottom" constant="18" id="qNu-2x-0w7"/>
+                <constraint firstItem="wq5-ai-ejo" firstAttribute="centerY" secondItem="95v-hU-Mml" secondAttribute="centerY" id="zda-6w-HZw"/>
+            </constraints>
+            <point key="canvasLocation" x="-153.43511450381678" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HIOMErdynamic" width="120" height="114"/>
+        <image name="Hoalertdynamic" width="121" height="114"/>
+        <image name="UionClosed" width="20" height="20"/>
+    </resources>
+</document>

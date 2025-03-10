@@ -96,6 +96,7 @@ class SinerePortalHandler: CreativeBaseHandler,UICollectionViewDelegateFlowLayou
                         }
                     }
                     portalUserDatas.append(sneUserObject)
+                    
                 }else{
                     if sneUserObjectInArray == false {
                         sneportalTempArray.append(sneUserObject)
@@ -142,7 +143,7 @@ class SinerePortalHandler: CreativeBaseHandler,UICollectionViewDelegateFlowLayou
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: SneTools.sneWidthScreen, height: 452)
+        return CGSize(width: SneTools.sneWidthScreen, height: 600)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -157,6 +158,11 @@ class SinerePortalHandler: CreativeBaseHandler,UICollectionViewDelegateFlowLayou
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if kind == UICollectionView.elementKindSectionHeader {
             let protalHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "PortalReusablePalette", for: indexPath) as! PortalReusablePalette
+            
+            portalUserDatas = portalUserDatas.filter({ SneUserOb in
+                SneUserOb.id  != "Vmw56gFdjsXq2wL8LdpTQYjNjIz0FpVt"
+            })
+            
             protalHeader.protalUserRelay.accept(portalUserDatas)
             protalHeader.sneMenuChanged = { [weak self] value in
                 guard let self = self else {return}
@@ -173,12 +179,11 @@ class SinerePortalHandler: CreativeBaseHandler,UICollectionViewDelegateFlowLayou
             protalHeader.sneUserIndex = {[weak self] value in
                 if let self = self {
                     
-                    self.portalUser = self.portalUserDatas[value]
-                    if SneTools.shareInfo.isSinereLogin(sneNmae: self.portalUser.sinereName) {
-                        NotificationCenter.default.post(name: NSNotification.Name("tabbarSelectChange"), object: ["index":1]);
-                    }else{
-                        self.performSegue(withIdentifier: "MySpaceHandler", sender: self)
-                    }
+                   
+                    let cvreat = SinwerPRoomaeChatreoller.init()
+                    cvreat.spaceUserObject = self.portalUserDatas[value]
+                    
+                    self.navigationController?.pushViewController(cvreat, animated: true)
                 }
             }
             

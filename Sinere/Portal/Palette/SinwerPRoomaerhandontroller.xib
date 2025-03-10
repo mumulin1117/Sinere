@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SinwerPRoomaerhandontroller" customModule="Sinere" customModuleProvider="target">
+            <connections>
+                <outlet property="entryuinFiop" destination="ie4-b5-g7h" id="0wP-DN-Whr"/>
+                <outlet property="sinertyUpload" destination="j65-g4-cON" id="JyM-Y9-cH4"/>
+                <outlet property="view" destination="fzG-Ff-75F" id="b2R-bB-UPf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fzG-Ff-75F">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sinereSketchNotes" translatesAutoresizingMaskIntoConstraints="NO" id="Q0p-SW-0HL">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="460"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please upload" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpX-Wf-Qu8">
+                    <rect key="frame" x="23.999999999999993" y="109" width="108.33333333333331" height="20"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j65-g4-cON">
+                    <rect key="frame" x="21" y="149" width="351" height="202"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="202" id="Ave-E0-eOF"/>
+                        <constraint firstAttribute="width" constant="351" id="qEN-uD-up4"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="icon_AddKderpic"/>
+                    <connections>
+                        <action selector="AkolpUploa:" destination="-1" eventType="touchUpInside" id="wFU-dE-Rlf"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8E-Jk-D7z">
+                    <rect key="frame" x="20" y="375" width="94" height="20"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kaungentert" translatesAutoresizingMaskIntoConstraints="NO" id="UyW-eA-UnN">
+                    <rect key="frame" x="21" y="415" width="351" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="pDy-FJ-Lni"/>
+                        <constraint firstAttribute="width" constant="351" id="xbR-DK-IAR"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJx-Ud-wXN">
+                    <rect key="frame" x="21" y="745" width="351" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="351" id="Jmy-kW-7Ar"/>
+                        <constraint firstAttribute="height" constant="48" id="LtL-2f-Qrm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Generate" backgroundImage="sinereBackgroundButton"/>
+                    <connections>
+                        <action selector="scvreaterNewSut:" destination="-1" eventType="touchUpInside" id="vAs-Sz-FC8"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ie4-b5-g7h">
+                    <rect key="frame" x="43" y="419" width="329" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="jml-va-0PN"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t87-LW-fJj">
+                    <rect key="frame" x="15" y="59" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="5dd-Jn-yFu"/>
+                        <constraint firstAttribute="height" constant="32" id="lDH-AJ-i9h"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="sineredAppBarBack"/>
+                    <connections>
+                        <action selector="raiResliHDjser:" destination="-1" eventType="touchUpInside" id="7ob-qK-E7I"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="428-9b-HdL"/>
+            <color key="backgroundColor" red="0.015686274510000001" green="0.023529411760000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="vpX-Wf-Qu8" firstAttribute="leading" secondItem="428-9b-HdL" secondAttribute="leading" constant="24" id="42u-fm-yMW"/>
+                <constraint firstItem="g8E-Jk-D7z" firstAttribute="leading" secondItem="428-9b-HdL" secondAttribute="leading" constant="20" id="7NT-Vb-N3u"/>
+                <constraint firstItem="vpX-Wf-Qu8" firstAttribute="top" secondItem="t87-LW-fJj" secondAttribute="bottom" constant="18" id="8s3-Fn-bIA"/>
+                <constraint firstItem="UyW-eA-UnN" firstAttribute="top" secondItem="g8E-Jk-D7z" secondAttribute="bottom" constant="20" id="FvI-ZI-Fzq"/>
+                <constraint firstItem="Q0p-SW-0HL" firstAttribute="leading" secondItem="428-9b-HdL" secondAttribute="leading" id="MjR-6P-YVn"/>
+                <constraint firstItem="t87-LW-fJj" firstAttribute="top" secondItem="428-9b-HdL" secondAttribute="top" id="OgT-tr-Hoi"/>
+                <constraint firstItem="j65-g4-cON" firstAttribute="top" secondItem="vpX-Wf-Qu8" secondAttribute="bottom" constant="20" id="Qvo-qb-yKK"/>
+                <constraint firstItem="428-9b-HdL" firstAttribute="trailing" secondItem="Q0p-SW-0HL" secondAttribute="trailing" id="WAp-JV-yHs"/>
+                <constraint firstItem="428-9b-HdL" firstAttribute="trailing" secondItem="ie4-b5-g7h" secondAttribute="trailing" constant="21" id="X9n-ax-bZl"/>
+                <constraint firstItem="fJx-Ud-wXN" firstAttribute="centerX" secondItem="fzG-Ff-75F" secondAttribute="centerX" id="ZFv-tU-uuh"/>
+                <constraint firstItem="ie4-b5-g7h" firstAttribute="centerY" secondItem="UyW-eA-UnN" secondAttribute="centerY" id="aIO-sX-d1v"/>
+                <constraint firstItem="j65-g4-cON" firstAttribute="centerX" secondItem="fzG-Ff-75F" secondAttribute="centerX" id="aT5-Ms-e1k"/>
+                <constraint firstItem="ie4-b5-g7h" firstAttribute="leading" secondItem="428-9b-HdL" secondAttribute="leading" constant="43" id="fhY-KZ-rLp"/>
+                <constraint firstItem="428-9b-HdL" firstAttribute="bottom" secondItem="fJx-Ud-wXN" secondAttribute="bottom" constant="25" id="gbu-aa-64j"/>
+                <constraint firstItem="t87-LW-fJj" firstAttribute="leading" secondItem="428-9b-HdL" secondAttribute="leading" constant="15" id="gj9-0t-q3X"/>
+                <constraint firstItem="UyW-eA-UnN" firstAttribute="centerX" secondItem="fzG-Ff-75F" secondAttribute="centerX" id="h29-VA-tIl"/>
+                <constraint firstItem="g8E-Jk-D7z" firstAttribute="top" secondItem="j65-g4-cON" secondAttribute="bottom" constant="24" id="paQ-BC-MkL"/>
+                <constraint firstItem="Q0p-SW-0HL" firstAttribute="top" secondItem="fzG-Ff-75F" secondAttribute="top" id="yra-6f-KMa"/>
+            </constraints>
+            <point key="canvasLocation" x="49.618320610687022" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_AddKderpic" width="351" height="202"/>
+        <image name="kaungentert" width="351" height="58"/>
+        <image name="sinereBackgroundButton" width="299" height="48"/>
+        <image name="sinereSketchNotes" width="375" height="460"/>
+        <image name="sineredAppBarBack" width="24" height="24"/>
+    </resources>
+</document>

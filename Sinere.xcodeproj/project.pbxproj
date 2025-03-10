@@ -27,6 +27,14 @@
 		045365042CF40FD900D332F0 /* SinereViolationReportPanelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045365032CF40FD900D332F0 /* SinereViolationReportPanelHandler.swift */; };
 		045365062CF4207100D332F0 /* DiamondHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045365052CF4207100D332F0 /* DiamondHandler.swift */; };
 		045365092CF425E700D332F0 /* MySpaceReusablePalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045365082CF425E700D332F0 /* MySpaceReusablePalette.swift */; };
+		0465C2162D7AC5CA0040B698 /* SineromeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465C2142D7AC5CA0040B698 /* SineromeCell.swift */; };
+		0465C2172D7AC5CA0040B698 /* SineromeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0465C2152D7AC5CA0040B698 /* SineromeCell.xib */; };
+		0465C21A2D7AC8EE0040B698 /* SinwerPubPickController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465C2182D7AC8EE0040B698 /* SinwerPubPickController.swift */; };
+		0465C21B2D7AC8EE0040B698 /* SinwerPubPickController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0465C2192D7AC8EE0040B698 /* SinwerPubPickController.xib */; };
+		0465C21E2D7ACE700040B698 /* SinwerPRoomaerhandontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465C21C2D7ACE700040B698 /* SinwerPRoomaerhandontroller.swift */; };
+		0465C21F2D7ACE700040B698 /* SinwerPRoomaerhandontroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0465C21D2D7ACE700040B698 /* SinwerPRoomaerhandontroller.xib */; };
+		0465C2222D7AE94E0040B698 /* SinwerPRoomaeChatreoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465C2202D7AE94E0040B698 /* SinwerPRoomaeChatreoller.swift */; };
+		0465C2232D7AE94E0040B698 /* SinwerPRoomaeChatreoller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0465C2212D7AE94E0040B698 /* SinwerPRoomaeChatreoller.xib */; };
 		0474B1682CF445F100425FC6 /* SinereSettingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474B1672CF445F100425FC6 /* SinereSettingHandler.swift */; };
 		0474B16A2CF4471D00425FC6 /* SinereSettingCellPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474B1692CF4471D00425FC6 /* SinereSettingCellPalette.swift */; };
 		0474B16C2CF44B9D00425FC6 /* SinereArtFeedbackHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0474B16B2CF44B9D00425FC6 /* SinereArtFeedbackHandler.swift */; };
@@ -81,6 +89,14 @@
 		045365032CF40FD900D332F0 /* SinereViolationReportPanelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinereViolationReportPanelHandler.swift; sourceTree = "<group>"; };
 		045365052CF4207100D332F0 /* DiamondHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondHandler.swift; sourceTree = "<group>"; };
 		045365082CF425E700D332F0 /* MySpaceReusablePalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpaceReusablePalette.swift; sourceTree = "<group>"; };
+		0465C2142D7AC5CA0040B698 /* SineromeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineromeCell.swift; sourceTree = "<group>"; };
+		0465C2152D7AC5CA0040B698 /* SineromeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SineromeCell.xib; sourceTree = "<group>"; };
+		0465C2182D7AC8EE0040B698 /* SinwerPubPickController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinwerPubPickController.swift; sourceTree = "<group>"; };
+		0465C2192D7AC8EE0040B698 /* SinwerPubPickController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SinwerPubPickController.xib; sourceTree = "<group>"; };
+		0465C21C2D7ACE700040B698 /* SinwerPRoomaerhandontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinwerPRoomaerhandontroller.swift; sourceTree = "<group>"; };
+		0465C21D2D7ACE700040B698 /* SinwerPRoomaerhandontroller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SinwerPRoomaerhandontroller.xib; sourceTree = "<group>"; };
+		0465C2202D7AE94E0040B698 /* SinwerPRoomaeChatreoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinwerPRoomaeChatreoller.swift; sourceTree = "<group>"; };
+		0465C2212D7AE94E0040B698 /* SinwerPRoomaeChatreoller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SinwerPRoomaeChatreoller.xib; sourceTree = "<group>"; };
 		0474B1672CF445F100425FC6 /* SinereSettingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinereSettingHandler.swift; sourceTree = "<group>"; };
 		0474B1692CF4471D00425FC6 /* SinereSettingCellPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinereSettingCellPalette.swift; sourceTree = "<group>"; };
 		0474B16B2CF44B9D00425FC6 /* SinereArtFeedbackHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinereArtFeedbackHandler.swift; sourceTree = "<group>"; };
@@ -224,6 +240,14 @@
 				0482ED152CF050B5003E5DE9 /* ImaginariumOptimizationReusablePalette.swift */,
 				0482ED162CF050B5003E5DE9 /* ImaginariumOptimizationReusablePalette.xib */,
 				04429BE22CF02173000E13E0 /* SinereStyleAiLayoutFlow.swift */,
+				0465C2142D7AC5CA0040B698 /* SineromeCell.swift */,
+				0465C2152D7AC5CA0040B698 /* SineromeCell.xib */,
+				0465C2182D7AC8EE0040B698 /* SinwerPubPickController.swift */,
+				0465C2192D7AC8EE0040B698 /* SinwerPubPickController.xib */,
+				0465C21C2D7ACE700040B698 /* SinwerPRoomaerhandontroller.swift */,
+				0465C21D2D7ACE700040B698 /* SinwerPRoomaerhandontroller.xib */,
+				0465C2202D7AE94E0040B698 /* SinwerPRoomaeChatreoller.swift */,
+				0465C2212D7AE94E0040B698 /* SinwerPRoomaeChatreoller.xib */,
 			);
 			path = Palette;
 			sourceTree = "<group>";
@@ -367,10 +391,14 @@
 				0405605A2CEDB69B00B04E03 /* LaunchScreen.storyboard in Resources */,
 				04F9D9B72CEED2C500D21393 /* PortalReusablePalette.xib in Resources */,
 				04A1B6E62D1959EF007F58E2 /* PortalUserCellPalette.xib in Resources */,
+				0465C21F2D7ACE700040B698 /* SinwerPRoomaerhandontroller.xib in Resources */,
 				04429BE12CF018B6000E13E0 /* ImaginariumHandlerCollectionReusablePalette.xib in Resources */,
+				0465C21B2D7AC8EE0040B698 /* SinwerPubPickController.xib in Resources */,
 				0405605B2CEDB69B00B04E03 /* Main.storyboard in Resources */,
 				04F9D9BB2CEED8C200D21393 /* PortalReusableCellPalette.xib in Resources */,
+				0465C2172D7AC5CA0040B698 /* SineromeCell.xib in Resources */,
 				0482ED182CF050B5003E5DE9 /* ImaginariumOptimizationReusablePalette.xib in Resources */,
+				0465C2232D7AE94E0040B698 /* SinwerPRoomaeChatreoller.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +461,7 @@
 				04F9D9B32CEED28E00D21393 /* PortalCellPalette.swift in Sources */,
 				04159F992CF6E7820067CE32 /* EngagementSinereHandler.swift in Sources */,
 				04429BDD2CF0186E000E13E0 /* ImaginariumHandler.swift in Sources */,
+				0465C2162D7AC5CA0040B698 /* SineromeCell.swift in Sources */,
 				045365092CF425E700D332F0 /* MySpaceReusablePalette.swift in Sources */,
 				04429BE02CF018B6000E13E0 /* ImaginariumHandlerCollectionReusablePalette.swift in Sources */,
 				0482ED222CF072BE003E5DE9 /* InstantRelayListCell.swift in Sources */,
@@ -440,6 +469,7 @@
 				0474B16A2CF4471D00425FC6 /* SinereSettingCellPalette.swift in Sources */,
 				04429BE32CF02173000E13E0 /* SinereStyleAiLayoutFlow.swift in Sources */,
 				040560662CEDE63B00B04E03 /* MusePoolHandler.swift in Sources */,
+				0465C21A2D7AC8EE0040B698 /* SinwerPubPickController.swift in Sources */,
 				04A0771E2CF59A4200CEF4B5 /* SneUserObject.swift in Sources */,
 				04F9D9BA2CEED8C200D21393 /* PortalReusableCellPalette.swift in Sources */,
 				045365042CF40FD900D332F0 /* SinereViolationReportPanelHandler.swift in Sources */,
@@ -458,10 +488,12 @@
 				0405606A2CEDEA2100B04E03 /* MySpaceHandler.swift in Sources */,
 				04F9D9BD2CEF1B5600D21393 /* SinerePortalHandlerDetailHandler.swift in Sources */,
 				0482ED262CF07B95003E5DE9 /* InstantRelayListContentCell.swift in Sources */,
+				0465C2222D7AE94E0040B698 /* SinwerPRoomaeChatreoller.swift in Sources */,
 				0474B16E2CF4500500425FC6 /* AboutSinereHandler.swift in Sources */,
 				0474B1682CF445F100425FC6 /* SinereSettingHandler.swift in Sources */,
 				04F9D9B62CEED2C500D21393 /* PortalReusablePalette.swift in Sources */,
 				04F9D9BF2CEF1BCE00D21393 /* SinerePortalDetailHeaderPalette.swift in Sources */,
+				0465C21E2D7ACE700040B698 /* SinwerPRoomaerhandontroller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,11 +528,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Sinere/Sinere.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 989CM2LH2W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sinere/GPUImage",
@@ -512,7 +542,7 @@
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow access to the microphone to make calls";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow to use the album to select pictures to publish dynamic";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -522,10 +552,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.6;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zww.app.cn.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinere.sne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = pp;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -546,11 +575,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Sinere/Sinere.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 989CM2LH2W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sinere/GPUImage",
@@ -562,7 +589,7 @@
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow access to the microphone to make calls";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow to use the album to select pictures to publish dynamic";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -572,10 +599,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.6;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zww.app.cn.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinere.sne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = pp;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

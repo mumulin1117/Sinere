@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="U6b-Vx-4bR" customClass="PortalReusablePalette" customModule="Sinere" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="390" height="451"/>
+            <rect key="frame" x="0.0" y="0.0" width="390" height="601"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="39i-yt-Xwt">
@@ -27,7 +27,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <button opaque="NO" clipsSubviews="YES" tag="222" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib6-Vj-oFJ">
-                    <rect key="frame" x="266.66666666666669" y="391" width="111.33333333333331" height="36"/>
+                    <rect key="frame" x="266.66666666666669" y="541" width="111.33333333333331" height="36"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="1cG-Fo-tRA"/>
@@ -47,7 +47,7 @@
                     </userDefinedRuntimeAttributes>
                 </button>
                 <button opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="220" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aay-kF-nxs">
-                    <rect key="frame" x="19.999999999999993" y="391" width="111.33333333333331" height="36"/>
+                    <rect key="frame" x="19.999999999999993" y="541" width="111.33333333333331" height="36"/>
                     <color key="backgroundColor" red="0.72156862745098038" green="0.3411764705882353" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="A3w-SX-bwl"/>
@@ -67,7 +67,7 @@
                     </userDefinedRuntimeAttributes>
                 </button>
                 <button opaque="NO" clipsSubviews="YES" tag="221" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi7-E0-UMX">
-                    <rect key="frame" x="143.33333333333334" y="391" width="111.33333333333334" height="36"/>
+                    <rect key="frame" x="143.33333333333334" y="541" width="111.33333333333334" height="36"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="BFe-QA-bBW"/>
@@ -87,10 +87,10 @@
                     </userDefinedRuntimeAttributes>
                 </button>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kmh-dq-TaV">
-                    <rect key="frame" x="0.0" y="258" width="390" height="102"/>
+                    <rect key="frame" x="0.0" y="300" width="390" height="208"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="102" id="omH-dG-7Ah"/>
+                        <constraint firstAttribute="height" constant="208" id="omH-dG-7Ah"/>
                     </constraints>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VyB-x3-e2k">
                         <size key="itemSize" width="128" height="128"/>
@@ -99,14 +99,31 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tE1-Vs-f1E">
+                    <rect key="frame" x="20" y="267" width="7" height="15"/>
+                    <color key="backgroundColor" red="0.72156862745098038" green="0.3411764705882353" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="DOr-FV-Eaw"/>
+                        <constraint firstAttribute="width" constant="7" id="oLd-wk-ojf"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chatroom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKs-3s-ErB">
+                    <rect key="frame" x="35" y="264.66666666666669" width="78" height="20"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="tE1-Vs-f1E" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="20" id="1Id-3a-A90"/>
+                <constraint firstItem="LKs-3s-ErB" firstAttribute="leading" secondItem="tE1-Vs-f1E" secondAttribute="trailing" constant="8" id="3Sj-IB-F2E"/>
                 <constraint firstItem="Vi7-E0-UMX" firstAttribute="leading" secondItem="Aay-kF-nxs" secondAttribute="trailing" constant="12" id="7Xi-XA-GhF"/>
                 <constraint firstItem="39i-yt-Xwt" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="8gw-zs-fcQ"/>
                 <constraint firstItem="39i-yt-Xwt" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="D9n-xQ-ic4"/>
                 <constraint firstItem="Vi7-E0-UMX" firstAttribute="width" secondItem="Aay-kF-nxs" secondAttribute="width" id="F5p-Df-R7U"/>
                 <constraint firstItem="Ib6-Vj-oFJ" firstAttribute="leading" secondItem="Vi7-E0-UMX" secondAttribute="trailing" constant="12" id="Ixc-QU-Ao8"/>
+                <constraint firstItem="kmh-dq-TaV" firstAttribute="top" secondItem="tE1-Vs-f1E" secondAttribute="bottom" constant="18" id="O4Z-q5-PQP"/>
                 <constraint firstAttribute="trailing" secondItem="kmh-dq-TaV" secondAttribute="trailing" id="QPq-JQ-Ww5"/>
                 <constraint firstItem="Ib6-Vj-oFJ" firstAttribute="width" secondItem="Aay-kF-nxs" secondAttribute="width" id="VtL-dR-P8o"/>
                 <constraint firstAttribute="bottom" secondItem="Vi7-E0-UMX" secondAttribute="bottom" constant="24" id="WVD-3C-w6E"/>
@@ -114,8 +131,9 @@
                 <constraint firstAttribute="bottom" secondItem="Aay-kF-nxs" secondAttribute="bottom" constant="24" id="dpu-fa-aSJ"/>
                 <constraint firstAttribute="trailing" secondItem="39i-yt-Xwt" secondAttribute="trailing" id="gfV-Tl-YQG"/>
                 <constraint firstAttribute="trailing" secondItem="Ib6-Vj-oFJ" secondAttribute="trailing" constant="12" id="ghE-uI-Pzn"/>
+                <constraint firstItem="LKs-3s-ErB" firstAttribute="centerY" secondItem="tE1-Vs-f1E" secondAttribute="centerY" id="jzc-8t-CYX"/>
+                <constraint firstItem="tE1-Vs-f1E" firstAttribute="top" secondItem="39i-yt-Xwt" secondAttribute="bottom" constant="33" id="kHi-mt-VVe"/>
                 <constraint firstItem="Aay-kF-nxs" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="20" id="mxG-nc-ed3"/>
-                <constraint firstItem="kmh-dq-TaV" firstAttribute="top" secondItem="39i-yt-Xwt" secondAttribute="bottom" constant="24" id="slI-QD-Q9w"/>
                 <constraint firstItem="kmh-dq-TaV" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="x4f-YW-kcA"/>
             </constraints>
             <connections>
@@ -124,8 +142,9 @@
                 <outlet property="protalMenuThree" destination="Ib6-Vj-oFJ" id="jxF-76-dIv"/>
                 <outlet property="protalMenuTwo" destination="Vi7-E0-UMX" id="wWF-dF-YFo"/>
                 <outlet property="protalUserCollectionPalette" destination="kmh-dq-TaV" id="l7t-In-liw"/>
+                <outlet property="purPersiner" destination="tE1-Vs-f1E" id="i5x-P1-MHe"/>
             </connections>
-            <point key="canvasLocation" x="192.36641221374046" y="153.16901408450704"/>
+            <point key="canvasLocation" x="192.36641221374046" y="205.98591549295776"/>
         </collectionReusableView>
     </objects>
     <resources>

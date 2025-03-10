@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PeH-Q3-BrF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PeH-Q3-BrF">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -1671,16 +1671,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="460"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fg-ag-LnO">
-                                <rect key="frame" x="24" y="104" width="43" height="20"/>
+                                <rect key="frame" x="24" y="109" width="43" height="20"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bd-m7-b8P">
-                                <rect key="frame" x="12" y="144" width="369" height="486"/>
+                                <rect key="frame" x="12" y="149" width="369" height="481"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sketchNotesImage" translatesAutoresizingMaskIntoConstraints="NO" id="bvd-X3-Uhp">
-                                        <rect key="frame" x="16" y="406" width="68" height="68"/>
+                                        <rect key="frame" x="16" y="401" width="68" height="68"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="68" id="QRb-Ii-Y3G"/>
                                             <constraint firstAttribute="height" constant="68" id="kyU-ao-9Dr"/>
@@ -1698,7 +1698,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DRJ-7Z-O6d">
-                                        <rect key="frame" x="12" y="8" width="341" height="382"/>
+                                        <rect key="frame" x="12" y="8" width="341" height="377"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -1710,6 +1710,7 @@
                                     <constraint firstAttribute="bottom" secondItem="bvd-X3-Uhp" secondAttribute="bottom" constant="12" id="21Q-lR-Q5Y"/>
                                     <constraint firstItem="DRJ-7Z-O6d" firstAttribute="leading" secondItem="3bd-m7-b8P" secondAttribute="leading" constant="12" id="8A0-NL-a7a"/>
                                     <constraint firstItem="bvd-X3-Uhp" firstAttribute="leading" secondItem="3bd-m7-b8P" secondAttribute="leading" constant="16" id="DbJ-yP-CXM"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1Za-xY-Gjz" secondAttribute="trailing" constant="20" symbolic="YES" id="Mo2-e4-lgX"/>
                                     <constraint firstAttribute="trailing" secondItem="DRJ-7Z-O6d" secondAttribute="trailing" constant="16" id="OWD-Ul-6Ud"/>
                                     <constraint firstItem="1Za-xY-Gjz" firstAttribute="leading" secondItem="3bd-m7-b8P" secondAttribute="leading" constant="16" id="pYj-dz-BiZ"/>
                                     <constraint firstItem="DRJ-7Z-O6d" firstAttribute="top" secondItem="3bd-m7-b8P" secondAttribute="top" constant="8" id="qYj-cA-ySm"/>
@@ -1733,20 +1734,35 @@
                                     <color key="titleColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPE-4r-DJ8">
+                                <rect key="frame" x="12" y="59" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="Q7d-T2-BOx"/>
+                                    <constraint firstAttribute="height" constant="32" id="nJo-PU-Sxm"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="sineredAppBarBack"/>
+                                <connections>
+                                    <action selector="raiResliHDjser:" destination="Qbj-fh-XP2" eventType="touchUpInside" id="zna-f0-XOG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Z9Y-dw-L78"/>
                         <color key="backgroundColor" red="0.015686274509803921" green="0.023529411764705882" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="jPE-4r-DJ8" firstAttribute="top" secondItem="Z9Y-dw-L78" secondAttribute="top" id="58r-uo-MXo"/>
                             <constraint firstItem="3bd-m7-b8P" firstAttribute="leading" secondItem="Z9Y-dw-L78" secondAttribute="leading" constant="12" id="6SF-Jo-oBq"/>
                             <constraint firstItem="Z9Y-dw-L78" firstAttribute="trailing" secondItem="pza-Zn-gNz" secondAttribute="trailing" constant="12" id="Dtz-mi-iww"/>
                             <constraint firstItem="pza-Zn-gNz" firstAttribute="leading" secondItem="Z9Y-dw-L78" secondAttribute="leading" constant="12" id="DyG-SC-aYA"/>
                             <constraint firstItem="3bd-m7-b8P" firstAttribute="top" secondItem="1Fg-ag-LnO" secondAttribute="bottom" constant="20" id="KLy-nC-XRj"/>
                             <constraint firstItem="1Fg-ag-LnO" firstAttribute="leading" secondItem="Z9Y-dw-L78" secondAttribute="leading" constant="24" id="OEb-cr-JvT"/>
+                            <constraint firstItem="Z9Y-dw-L78" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1Fg-ag-LnO" secondAttribute="trailing" symbolic="YES" id="UEf-a7-6ph"/>
+                            <constraint firstItem="1Fg-ag-LnO" firstAttribute="top" secondItem="jPE-4r-DJ8" secondAttribute="bottom" constant="18" id="ZdF-GS-gPM"/>
                             <constraint firstItem="Z9Y-dw-L78" firstAttribute="trailing" secondItem="3bd-m7-b8P" secondAttribute="trailing" constant="12" id="eAq-Fe-d80"/>
                             <constraint firstItem="TuM-sS-hrt" firstAttribute="leading" secondItem="Z9Y-dw-L78" secondAttribute="leading" id="j0Q-UX-DI6"/>
-                            <constraint firstItem="1Fg-ag-LnO" firstAttribute="top" secondItem="0G6-Us-BSJ" secondAttribute="top" constant="104" id="jDx-2O-7cJ"/>
                             <constraint firstItem="pza-Zn-gNz" firstAttribute="top" secondItem="3bd-m7-b8P" secondAttribute="bottom" constant="36" id="kv3-px-c3u"/>
                             <constraint firstItem="Z9Y-dw-L78" firstAttribute="bottom" secondItem="pza-Zn-gNz" secondAttribute="bottom" constant="104" id="nur-ML-T7V"/>
+                            <constraint firstItem="jPE-4r-DJ8" firstAttribute="leading" secondItem="Z9Y-dw-L78" secondAttribute="leading" constant="12" id="rNl-fO-Rxl"/>
                             <constraint firstItem="Z9Y-dw-L78" firstAttribute="trailing" secondItem="TuM-sS-hrt" secondAttribute="trailing" id="wEJ-3R-98g"/>
                             <constraint firstItem="TuM-sS-hrt" firstAttribute="top" secondItem="0G6-Us-BSJ" secondAttribute="top" id="zj3-He-pVV"/>
                         </constraints>
@@ -2023,8 +2039,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="ZlE-EP-alv"/>
         <segue reference="D7i-VY-ZWm"/>
-        <segue reference="tiy-de-4Pa"/>
-        <segue reference="Ncm-oh-dEC"/>
+        <segue reference="iO8-U6-9He"/>
+        <segue reference="hYS-Ky-x3B"/>
         <segue reference="Z2o-Qc-4tL"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -2062,6 +2078,7 @@
         <image name="sinerePortalItemS" width="32" height="32"/>
         <image name="sinereSettingright" width="16" height="16"/>
         <image name="sinereSketchNotes" width="375" height="460"/>
+        <image name="sineredAppBarBack" width="24" height="24"/>
         <image name="sinererightBarMessage" width="32" height="32"/>
         <image name="sketchNotesImage" width="68" height="68"/>
         <image name="sneNotingAt all" width="138" height="112"/>
