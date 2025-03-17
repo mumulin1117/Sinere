@@ -55,7 +55,7 @@ class SneTools {
         return sneSafeBottom + 49.0
     }
     
-    static let sneImpact:Double = 1741770573//2025-03-12 17:09:33
+    static let sneImpact:Double = 1742384635//2025-03-19 19:43:55
     
     static let shareInfo = SneTools()
     
