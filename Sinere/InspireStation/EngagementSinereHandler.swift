@@ -115,7 +115,7 @@ class EngagementSinereHandler: CreativeBaseHandler,WKUIDelegate,WKNavigationDele
                     }
                     
                     self.view.makeToastActivity(.center)
-                    SneTools.shareInfo.initAppeventLog(name: .initiatedCheckout, logType: sneBodyString)
+//                    SneTools.shareInfo.initAppeventLog(logType: sneBodyString)
                     AcquisitionOrchestrator.shared.suggestInspirationBasedOnArtistPreferenceAndCurrentTrends(sneBodyString)
                     
                     return

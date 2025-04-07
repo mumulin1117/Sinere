@@ -14,7 +14,7 @@ target 'Sinere' do
   pod 'Toast-Swift'
   pod 'IQKeyboardManagerSwift'
   pod 'BBWebImage'
-  pod 'FBSDKCoreKit'
+#  pod 'FBSDKCoreKit'
 
 end
 

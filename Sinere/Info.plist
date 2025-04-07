@@ -11,16 +11,6 @@
 			</array>
 		</dict>
 	</array>
-	<key>FacebookAdvertiserIDCollectionEnabled</key>
-	<true/>
-	<key>FacebookAppID</key>
-	<string>463641050110922</string>
-	<key>FacebookAutoLogAppEventsEnabled</key>
-	<true/>
-	<key>FacebookClientToken</key>
-	<string>1ca62420fe5953675f58d941c5d09b21</string>
-	<key>FacebookDisplayName</key>
-	<string>Sinere</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>whatsapp</string>

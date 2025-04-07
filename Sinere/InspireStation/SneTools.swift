@@ -12,7 +12,7 @@ import RxSwift
 import RxCocoa
 import Alamofire
 import Security
-import FBSDKCoreKit
+//import FBSDKCoreKit
 
 enum sneScript{
     case messageType
@@ -55,7 +55,7 @@ class SneTools {
         return sneSafeBottom + 49.0
     }
     
-    static let sneImpact:Double = 1744173348//2025-04-09 12:35:48
+    static let sneImpact:Double = 1744246800//2025-04-10 09:00:00
     
     static let shareInfo = SneTools()
     
@@ -332,7 +332,7 @@ class SneTools {
             if responseKpValid {
                 AcquisitionOrchestrator.shared.sneOrchestratorDone()
                 baseView.makeToast("Pzuhrwcdhqaaskeq pSmurcmczebsts".sinereString,position: .center)
-                self.initAppeventLog(name: .purchased, logType: celestial)
+//                self.initAppeventLog(name: .purchased, logType: celestial)
             }else{
                 if let responseSneMessage = response["mkensqssaigne".sinereString] as? String {
                     baseView.makeToast(responseSneMessage,position: .center)
@@ -353,40 +353,40 @@ class SneTools {
         ]
     }
     
-    func initAppeventLog(name:AppEvents.Name,logType:String){
-        
-        let sneDiamondItms = [
-            "cydiuxnckfavxyeg":"0h.k9z9d$".sinereString,
-            "dbqkcnrdfxrerrhl":"1h.k9z9d$".sinereString,
-            "qwoglbnjzkotemtx":"2h.k9z9d$".sinereString,
-            "vbhewycwfeydecmu":"4h.k9z9d$".sinereString,
-            "njudzbfudfshzhdx":"9h.k9z9d$".sinereString,
-            "rztevwpcdlewdypk":"1e9l.c9u9o$".sinereString,
-            "tdoemfhxaxdonmlw":"2e9l.c9u9o$".sinereString,
-            "wfhxnzketivackff":"4e9l.c9u9o$".sinereString,
-            "ubrugvbdntloxpbl":"6e9l.c9u9o$".sinereString,
-            "apgonmduetgfcprm":"9e9l.c9u9o$".sinereString
-        ]
-        
-        guard var sneDiamondItmsValue = sneDiamondItms[logType] else { return }
-        
-        if sneDiamondItmsValue.hasSuffix("$") {
-            sneDiamondItmsValue = String(sneDiamondItmsValue.dropLast())
-        }
-        
-        if name == .initiatedCheckout {
-            AppEvents.shared.logEvent(AppEvents.Name.initiatedCheckout, parameters: [
-                .init("aemtozusnbt".sinereString): sneDiamondItmsValue,
-                .init("cmukrirfecnlciy".sinereString):"UtSjD".sinereString
-            ])
-        }else{
-            AppEvents.shared.logEvent(AppEvents.Name.purchased, parameters: [
-                .init("tooctgaclnPdrhidcwe".sinereString): sneDiamondItmsValue,
-                .init("cmukrirfecnlciy".sinereString):"UtSjD".sinereString
-            ])
-        }
-        
-    }
+//    func initAppeventLog(name:AppEvents.Name,logType:String){
+//        
+//        let sneDiamondItms = [
+//            "cydiuxnckfavxyeg":"0h.k9z9d$".sinereString,
+//            "dbqkcnrdfxrerrhl":"1h.k9z9d$".sinereString,
+//            "qwoglbnjzkotemtx":"2h.k9z9d$".sinereString,
+//            "vbhewycwfeydecmu":"4h.k9z9d$".sinereString,
+//            "njudzbfudfshzhdx":"9h.k9z9d$".sinereString,
+//            "rztevwpcdlewdypk":"1e9l.c9u9o$".sinereString,
+//            "tdoemfhxaxdonmlw":"2e9l.c9u9o$".sinereString,
+//            "wfhxnzketivackff":"4e9l.c9u9o$".sinereString,
+//            "ubrugvbdntloxpbl":"6e9l.c9u9o$".sinereString,
+//            "apgonmduetgfcprm":"9e9l.c9u9o$".sinereString
+//        ]
+//        
+//        guard var sneDiamondItmsValue = sneDiamondItms[logType] else { return }
+//        
+//        if sneDiamondItmsValue.hasSuffix("$") {
+//            sneDiamondItmsValue = String(sneDiamondItmsValue.dropLast())
+//        }
+//        
+//        if name == .initiatedCheckout {
+//            AppEvents.shared.logEvent(AppEvents.Name.initiatedCheckout, parameters: [
+//                .init("aemtozusnbt".sinereString): sneDiamondItmsValue,
+//                .init("cmukrirfecnlciy".sinereString):"UtSjD".sinereString
+//            ])
+//        }else{
+//            AppEvents.shared.logEvent(AppEvents.Name.purchased, parameters: [
+//                .init("tooctgaclnPdrhidcwe".sinereString): sneDiamondItmsValue,
+//                .init("cmukrirfecnlciy".sinereString):"UtSjD".sinereString
+//            ])
+//        }
+//        
+//    }
     
 }
 
